@@ -2,9 +2,11 @@
   "name": "log_anomaly_detection",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "tsc",
+    "start": "rm -r dist && npm run build && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +14,7 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "eslint": "^5.12.1"
+    "eslint": "^5.12.1",
+    "typescript": "^3.2.4"
   }
 }
